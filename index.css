@@ -1,0 +1,28 @@
+:root{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#root{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wrapper{
+    width: 33.33%;
+    height: 33.33vh;
+    background-color: blue;
+
+}
+#card{
+    background-color: red;
+    height: 80%;
+}
+#select{
+    text-align: center;
+    font-weight: bold;
+    height: 20%;
+}
