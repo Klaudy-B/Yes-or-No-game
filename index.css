@@ -1,5 +1,7 @@
 :root{
     box-sizing: border-box;
+    --border-radius: 20%;
+    --transition: 0.5s linear;
 }
 body{
     padding: 0px;
@@ -12,17 +14,71 @@ body{
     align-items: center;
 }
 #wrapper{
-    width: 33.33%;
+    width: 504px;
     height: 33.33vh;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
 
 }
 #card{
+    position: relative;
     background-color: red;
-    height: 80%;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 60%;
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+#card>p{
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 70%;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: aqua;
 }
 #select{
-    text-align: center;
-    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 20%;
+    width: 100%;
+}
+#select>button{
+    display: inline-block;
+    background-color: aqua;
+    color: black;
+    border-radius: var(--border-radius);
+    border-color: black;
+    padding: 0.5rem 1rem;
+}
+.hide{
+    transform: rotateY(90deg);
+    transition: var(--transition);
+}
+.show{
+    transform: rotateY(0deg);
+    transition: var(--transition);
+    transition-delay: 0.5s;
+    
+}
+@media screen and (max-width: 720px) {
+    #wrapper{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 480px) {
+    #wrapper{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 360px) {
+    #wrapper{
+        width: 98%;
+    }
 }

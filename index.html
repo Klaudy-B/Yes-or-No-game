@@ -3,13 +3,19 @@
     <head>
         <title>Yes or No game</title>
         <link rel="stylesheet" href="./index.css">
+        <script src="./index.js" defer></script>
     </head>
     <body>
         <div id="root">
-            <div id="wrapper">
-                <div id="card"></div>
-                <div id="select">select</div>
-            </div>
+            <section id="wrapper">
+                <div id="card">
+                    <p id="p1" class="show">P1</p>
+                    <p id="p2" class="hide">P2</p>
+                </div>
+                <div id="select">
+                    <button>No</button><button>Yes</button>
+                </div>
+            </section>
         </div>
     </body>
 </html>
