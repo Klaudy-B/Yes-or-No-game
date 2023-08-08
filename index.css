@@ -31,9 +31,6 @@ body{
     font-size: 2rem;
     width: 100%;
     height: 60%;
-    animation-name: rotation;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
 }
 #card>#p1, #card>#p2{
     position: absolute;
