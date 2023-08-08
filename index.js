@@ -1,7 +1,17 @@
 const questionsList = [
-    "Question1",
-    "Question2",
-    "Question3"
+    "🙂",
+    "😊",
+    "😒",
+    "😎",
+    "😢",
+    "🫠",
+    "🙃",
+    "😭",
+    "😵",
+    "🤢",
+    "🥹",
+    "😥",
+    "😌"
 ]
 
 document.querySelector("#p1").innerHTML = questionsList[Math.floor(Math.random()*questionsList.length)];
@@ -16,13 +26,13 @@ buttons.forEach(
                 p1.className = "hide";
             }else{
                 p1.className = "show";
-                p1.innerHTML = questionsList[Math.floor(Math.random()*questionsList.length)];
+                p1.innerText = questionsList[Math.floor(Math.random()*questionsList.length)];
             }
             if(p2.className === "show"){
                 p2.className = "hide";
             }else{
                 p2.className = "show";
-                p2.innerHTML = questionsList[Math.floor(Math.random()*questionsList.length)];
+                p2.innerText = questionsList[Math.floor(Math.random()*questionsList.length)];
             }
         })
     }
