@@ -11,7 +11,11 @@ const questionsList = [
     "🤢",
     "🥹",
     "😥",
-    "😌"
+    "😌",
+    "😍",
+    "😡",
+    "😠",
+    "😤"
 ]
 
 document.querySelector("#p1").innerHTML = questionsList[Math.floor(Math.random()*questionsList.length)];
