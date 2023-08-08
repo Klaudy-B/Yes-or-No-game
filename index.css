@@ -1,6 +1,5 @@
 :root{
     box-sizing: border-box;
-    --border-radius: 20%;
     --transition: 0.5s linear;
 }
 body{
@@ -57,7 +56,7 @@ body{
     display: inline-block;
     background-color: aqua;
     color: black;
-    border-radius: var(--border-radius);
+    border-radius: 20%;
     border-color: black;
     padding: 0.5rem 1rem;
     cursor: pointer;
